@@ -2,7 +2,7 @@ create procedure dbo.usp_MakeFamilyPurchase
     @FamilySurName varchar(255)
 as
 begin
-    -- Проверяем существует ли фамилия в базе
+	-- Проверяем существует ли фамилия в базе
 	if not exists (
 		select 1 
 		from dbo.Family 
