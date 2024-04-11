@@ -8,10 +8,10 @@ begin
 		from dbo.Family 
 		where SurName = @FamilySurName
 	)
-		begin
-			raiserror ('Введеная фамилия отсутсвует в базе', 16, 1)
-			return
-		end
+	begin
+		raiserror ('Введеная фамилия отсутсвует в базе', 16, 1)
+		return
+	end
 		
 	--  Обновляем данные в таблице dbo.Family в поле BudgetValue 
 	update f
