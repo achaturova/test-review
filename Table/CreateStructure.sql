@@ -12,8 +12,8 @@ begin
 		Code as 's' + CAST(ID as varchar(255)),
 		Name varchar(255) not null,
 		constraint PK_SKU primary key (ID)
-	) 
-  alter table dbo.SKU add constraint UK_SKU_Code unique (Code)   
+	)
+	alter table dbo.SKU add constraint UK_SKU_Code unique (Code)
 end 
 
 -- Создание таблицы dbo.Family
